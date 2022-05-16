@@ -1,11 +1,80 @@
+:root {
+    /* Palette */
+    --primary-col: #141922;
+    --secondary-col: #282828;
+    /* Commons */
+    --gray-col: #a3a3a3;
+    --song-titles-col: white;
+    --dark-gray: #333;
+}
+
 /* Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* TEST  */
+
 body{
-    background-color: pink;
-    text-align: center;
+    background-color: pink;  
+}
+
+footer{
+   background-color: var(--titles-col);
+}
+
+/* COMMON  */
+
+.flex-container{
+    display: flex;
+}
+
+
+
+/* MAIN   */
+
+nav{
+    background-color: red;
+    width: 250px;
+    overflow-y: hidden;
+
+}
+
+.main-menu{
+    background-color: rgb(252, 137, 137);
+    width: calc(100% - 250px);
+    height: calc(100vh - 70px);
+    padding-top: 60px;
+    overflow-y: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER   */
+
+footer{
+    background-color: aqua;
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
 }
