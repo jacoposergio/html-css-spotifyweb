@@ -67,13 +67,13 @@ h2{
 h3{
     font-size: 0.8rem ;
     font-weight: 800;
-    margin-top: 0.1rem;
+    margin-top: 0.3rem;
 }
 
 h5{
     font-size: 0.6rem;
     color: var(--gray-col);
-    margin-top: 0.1rem;
+    margin-top: 0.3rem;
 }
 
 
@@ -83,7 +83,6 @@ nav{
     background-color: red;
     width: 250px;
     overflow-y: hidden;
-
 }
 
 .home-page{
@@ -97,7 +96,6 @@ nav{
 .upgrade-banner{
     background-color: rgba(0, 0, 0, 0.5) ;
     color: white;
-    font-size: 20px;
     position: fixed;
     top: 0;
     right: 0;
@@ -105,6 +103,16 @@ nav{
     width: calc(100% - 250px);
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+}
+
+.upgrade-button{
+    margin-right: 0.5rem;
+    font-size: 0.7rem;
+    background-color: rgb(192, 29, 29);
+    padding: 0.5rem 1rem;
+    border: 1px solid black;
+    border-radius: 2rem;
 }
 
 /* home-page nav banner  */
@@ -113,7 +121,7 @@ nav{
     justify-content: center;
     font-size: 0.8rem;
     font-weight: 500;
-    margin-top: rem;
+    margin-top: 0.5rem;
     color: var(--gray-col);
 }
 
@@ -121,20 +129,46 @@ nav{
        margin-left: 1.1rem;
    }
 
-   .recently-played-columns{
+/* Recently played & Creato per John Doe & Popular artist  */
+
+   .recently-played .song-card-columns{
        justify-content: space-between;
        margin-top: 1rem;
    }
 
-   .recently-played-col{
+   .song-card-col{
        width: 10rem;
        margin-right: 0.5rem;
    }
 
-   .recently-played-text{
+   .song-card-text{
         text-align: center;
    } 
 
+   .custom-playlist .song-card-columns{
+       justify-content: flex-start
+   }
+
+   .subtitle-playlist{
+       color: var(--gray-col);
+       font-size: 0.7rem;
+   }
+
+
+   .popular-artist h3, .custom-playlist h3{
+       margin-bottom: 1rem;
+   }
+
+   /* popular artist  */
+
+   .circle-img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+   
 
 
 
