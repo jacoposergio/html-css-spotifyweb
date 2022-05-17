@@ -90,13 +90,14 @@ nav{
     justify-content: space-between;
 }
 
-.nav-top{
+/* .nav-top{
     flex-shrink: 1;
+    height: 70%;
 }
 
 .nav-bottom{
     flex-shrink: 2;
-}
+} */
 
 .spotify-logo img{
     width: 100px;
@@ -122,6 +123,18 @@ nav{
 }
 
 /* nav playlist   */
+
+.nav-playlist{
+    
+    flex-grow: 1;
+    overflow-y: auto;
+    height: 80%;
+}
+
+.nav-playlist ul{
+    overflow-y: auto;
+    height: 50%;
+}
 
 .nav-playlist h3{
     font-size: 0.7rem;
