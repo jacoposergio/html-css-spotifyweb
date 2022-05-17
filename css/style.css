@@ -79,12 +79,37 @@ h5{
 
 /* MAIN   */
 
+/* nav ( barra laterale)  */
+
 nav{
     background-color: red;
-    width: 200px;
+    width: 170px;
     overflow-y: hidden;
     padding-left: 1rem;
 }
+
+.spotify-logo img{
+    width: 100px;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.nav-links li{
+    font-size: 0.6rem;
+    color: var(--gray-col);
+    margin-top: 0.4rem;
+}
+
+.nav-links li:first-child{
+    color: black;
+}
+
+.nav-links i{
+    margin-right: 2px;
+    font-size: 1rem;
+}
+
+/* home page  */
 
 .home-page{
     background-color: rgb(252, 137, 137);
@@ -101,7 +126,7 @@ nav{
     top: 0;
     right: 0;
     height: 60px;
-    width: calc(100% - 200px);
+    width: calc(100% - 170px);
     display: flex;
     justify-content: flex-end;
     align-items: center;
