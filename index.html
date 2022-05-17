@@ -18,18 +18,20 @@
                     <!-- MENU LATERALE SINISTRA  -->
                     <nav class="flex-container">
                       
-                            <div class="spotify-logo">
+                            <div class="spotify-logo hide">
                                 <img src="img/logo.svg" alt="logo">
+
                             </div>
 
                             <div class="nav-links">
+                                <img class="logo-xs" src="img/logo-small.svg" alt="logo">
                                 <ul>
-                                    <li><span><i class="fa-solid fa-house"></i></span> <a href="#">Home</a></li>
-                                    <li><span><i class="fa-solid fa-magnifying-glass"></i></span> <a href="#">Search</a></li>
-                                    <li><span><i class="fa-solid fa-building"></i></span> <a href="#">La tua libreria</a></li>
+                                    <li><span><i class="fa-solid fa-house only-xs"></i></span> <a class="hide" href="#">Home</a></li>
+                                    <li><span><i class="fa-solid fa-magnifying-glass only-xs"></i></span> <a class="hide" href="#">Cerca</a></li>
+                                    <li><span><i class="fa-solid fa-swatchbook only-xs"></i></span> <a class="hide" href="#">La tua libreria</a></li>
                                 </ul>
                             </div>
-                            <div class="nav-playlist">
+                            <div class="nav-playlist hide">
                                 <h3>PLAYLIST</h3>
                                 <div class="crea-playlist flex-container">
                                     <div class="crea-playlist-symbol">
@@ -55,9 +57,9 @@
                         
                        
                             <div class="profile-banner">
-                                <div class="install-app"> <span><i class="fa-solid fa-plus"></i></span> Installa app</div>
-                                <hr>
-                                <div class="user-profile"> <span><i class="fa-solid fa-circle-user"></i></span> John Doe</div>
+                                <div class="install-app"> <span><i class="fa-solid fa-plus only-xs"></i></span><span class="hide">Installa app</span></div>
+                                <hr class="hide">
+                                <div class="user-profile"> <span><i class="fa-solid fa-circle-user only-xs"></i></span><span class="hide">John Doe</span></div>
                             </div>
                       
                     </nav>
@@ -223,7 +225,7 @@
                               </div>
                           </div>
                           <div class="footer-col">
-                            <div class="footer-col-center">
+                            <div class="footer-col-center flex-container">
                                     <div class="footer-center-top flex-container">
                                            <div class="footer-center-icons flex-container">
                                                 <i class="fa-solid fa-shuffle"></i>
