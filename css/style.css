@@ -371,7 +371,7 @@ footer{
 
   .footer-dx-icons{
     color: var(--gray-col);
-    font-size: 0.7rem;
+    font-size: 0.5rem;
   }
 
   .footer-dx-icons i{
@@ -379,13 +379,65 @@ footer{
   }
 
   .footer-dx-icons .fa-solid.fa-volume-high{
-      font-size: 0.8rem;
+      font-size: 0.6rem;
+  }
+
+  .footer-center-top{
+    justify-content: center;
+  }
+
+  .footer-center-bottom{
+      margin-top: 0.3rem;
   }
     
+  .footer-center-icons{ 
+     align-items: center; 
+    font-size: 1rem;
+  }
+  
+  .footer-center-icons i{
+      margin-right: 1rem;
+  }
+
+  .footer-center-icons .fa-solid.fa-rotate-right{
+      font-size: 0.9rem;
+  }
+
+  .footer-center-icons .fa-regular.fa-circle-play{
+      font-size: 1.3rem;
+  }
+
+  .track-time{
+      align-items: center;
+  }
+
+  .time-code{
+      font-size: 0.6rem;
+      font-weight: 600;
+      margin: 0 0.5rem;
+  }
+
+  .footer-center-volume{
+    background-color: var(--gray-col);
+    width: 20rem;
+    height: 0.2rem;
+    border-radius: 3rem;
+    overflow: hidden;
+  }
+
+     .black-bar{
+        height: 100%;
+        background-color: #141922;
+     }
+
+     .footer-center-volume .black-bar{
+         width: 20%;
+     }
+
    
   .footer-dx-volume{
       background-color: var(--gray-col);
-      width: 6rem;
+      width: 5rem;
       height: 0.2rem;
       border-radius: 3rem;
       overflow: hidden;
@@ -394,7 +446,8 @@ footer{
 
   .footer-dx-volume .black-bar{
       width: 30%;
-      height: 100%;
-      background-color: #141922;
   }
 
+  .footer-center-top{
+     
+  }
