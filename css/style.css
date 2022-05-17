@@ -250,6 +250,7 @@ nav{
    .recently-played .song-card-columns{
        justify-content: space-between;
        margin-top: 1rem;
+       width: 100%;
    }
 
    .song-card-col{
@@ -265,11 +266,16 @@ nav{
        justify-content: flex-start
    }
 
+   .blank-space-container{
+       height: 10rem;
+       width: 80%;
+       background-color: #141922;
+   }
+
    .subtitle-playlist{
        color: var(--gray-col);
        font-size: 0.7rem;
    }
-
 
    .popular-artist h3, .custom-playlist h3{
        margin-bottom: 1rem;
@@ -278,10 +284,8 @@ nav{
    /* popular artist  */
 
    .circle-img{
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    overflow: hidden;
+        border-radius: 50%;
+        overflow: hidden;
 }
 
 
@@ -314,9 +318,51 @@ footer{
     position: fixed;
     bottom: 0;
     left: 0;
+}
 
+.footer-container{
+    height: 100%;
 }
 
 .footer-columns{
+    height: 100%;
     justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    
 }
+
+.footer-col{
+    
+}
+
+/* footer-sx   */
+ 
+.footer-col-sx {
+      margin-left: 1rem;
+      align-items: center;
+}
+
+.footer-sx-text{
+    margin-left: 0.5rem;
+}
+
+.footer-col-sx img{
+     width: 2.5rem;
+}
+
+  .footer-sx-text h5{
+    margin-top: -0.2rem;
+}
+
+.footer-sx-icons{
+    margin-left: 1rem;
+    font-size: 0.7rem;
+}
+
+  .footer-sx-icons i{
+      margin-right: 0.5rem;
+      color: var(--gray-col);
+  }
+   
+
