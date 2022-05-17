@@ -19,7 +19,7 @@
 /* TEST  */
 
 body{
-    background-color: pink;  
+    background-color: pink;
 }
 
 footer{
@@ -81,8 +81,9 @@ h5{
 
 nav{
     background-color: red;
-    width: 250px;
+    width: 200px;
     overflow-y: hidden;
+    padding-left: 1rem;
 }
 
 .home-page{
@@ -100,7 +101,7 @@ nav{
     top: 0;
     right: 0;
     height: 60px;
-    width: calc(100% - 250px);
+    width: calc(100% - 200px);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -143,7 +144,7 @@ nav{
 
    .song-card-text{
         text-align: center;
-   } 
+   }
 
    .custom-playlist .song-card-columns{
        justify-content: flex-start
@@ -168,7 +169,7 @@ nav{
     overflow: hidden;
 }
 
-   
+
 
 
 
