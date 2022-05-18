@@ -647,8 +647,6 @@ footer{
 
   @media screen and (max-width: 1100px){
    
-
-
        .footer-center-volume{
         min-width: 13rem;
       }
@@ -693,8 +691,6 @@ footer{
 
   @media screen and (max-width: 600px){
 
-
-
     
 nav{
     width: 40px;
@@ -724,7 +720,6 @@ nav{
     background-color: rgba(0, 0, 0, 0);
 }
  
-    
     .only-xs{
         display: inline-block;
     }
@@ -763,11 +758,5 @@ nav{
         margin-right: 0rem;
     }
     
-
-
-
-
-
-
 
 }
