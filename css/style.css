@@ -140,6 +140,7 @@ nav{
 .nav-playlist{
     flex-grow: 1;
     overflow-y: auto;
+   
 }
 
 .nav-playlist ul{
@@ -156,6 +157,7 @@ nav{
     margin-top: 0.5rem;
     align-content: center;
     align-items: center;
+    
 }
 
 .crea-playlist-symbol{
@@ -210,6 +212,10 @@ nav{
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
+
+  .install-symbol{
+      margin-right: 0.2rem;
+  }
 
 .user-profile i{
     font-size: 1.3rem;
@@ -401,7 +407,7 @@ footer{
 
   .footer-col-center{
       flex-direction: column;
-      width: 100%;
+      
   }
 
   .footer-center-top{
@@ -409,7 +415,7 @@ footer{
   }
 
   .footer-center-bottom{
-      width: 100%;
+     
       margin-top: 0.3rem;
   }
     
@@ -433,7 +439,6 @@ footer{
   .track-time{
       justify-content: center;
       align-items: center;
-      width: 100%;
   }
 
   .time-code{
@@ -500,7 +505,9 @@ footer{
            background-color: rgb(203, 203, 122);
        }
    
-
+       .footer-center-volume{
+        min-width: 13rem;
+      }
 
   }
 
