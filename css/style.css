@@ -1,12 +1,12 @@
+
 :root {
     /* Palette */
     --primary-col: #141922;
     --secondary-col: #282828;
+    --tertiary-col: black;
     /* Commons */
-    --gray-col: #a3a3a3;
-    --song-titles-col: white;
-    --dark-gray: #333;
-}
+    --white-col: white;
+   }
 
 /* Reset */
 
@@ -16,18 +16,6 @@
     box-sizing: border-box;
 }
 
-/* TEST  */
-
-body{
-    background-color: rgb(151, 26, 49);
-    position: relative;
-}
- /* end test  */
-
-
-footer{
-   background-color: var(--titles-col);
-}
 
 /* COMMON  */
 
@@ -36,8 +24,10 @@ footer{
 }
 
 body{
+    background-color: var(--primary-col);
     font-family: 'Montserrat', sans-serif;
-}
+    position: relative;
+ }
 
 .flex-container{
     display: flex;
@@ -69,18 +59,22 @@ h2{
     font-size: 1.4rem;
     font-weight: 700;
     margin-top: 1.5rem;
+    color: var(--white-col);
 }
 
 h3{
     font-size: 0.8rem ;
     font-weight: 800;
     margin-top: 0.3rem;
+    color: var(--white-col);
 }
 
 h5{
     font-size: 0.6rem;
-    color: var(--gray-col);
+    color: var(--white-col);
     margin-top: 0.3rem;
+    color: var(--white-col);
+    
 }
 
 
@@ -89,11 +83,15 @@ h5{
 /* nav ( barra laterale)  */
 
 nav{
-    background-color: rgb(63, 72, 3);
+    background-color: var(--tertiary-col);
     width: 170px;
     overflow-y: hidden;
     padding-left: 1rem;
     flex-direction: column;
+}
+
+.spotify-logo-container{
+    height: 60px;
 }
 
 .spotify-logo img{
@@ -104,6 +102,11 @@ nav{
 
 /* nav links   */
 
+.nav-links{
+    height: 70px;
+}
+
+
 .nav-links ul{
     display: flex;
     flex-direction: column;
@@ -113,18 +116,19 @@ nav{
     display: flex;
     align-items: center;
     font-size: 0.6rem;
-    color: var(--gray-col);
+    color: var(--white-col);
     margin-top: 0.5rem;
     height: 100%;
+    opacity: 0.5;
 }
 
 .nav-links li a{
     margin-left: 0.4rem;
-}
+   }
 
 .nav-links li:first-child{
-    color: black;
     margin-left: -0.2rem;
+    opacity: 1;
 }
 
 .nav-links i{
@@ -140,12 +144,12 @@ nav{
 .nav-playlist{
     flex-grow: 1;
     overflow-y: auto;
-   
+    height: calc( 100% - 195px) ;
 }
 
 .nav-playlist ul{
     overflow-y: auto;
-    height: 50%;
+    opacity: 0.5;
 }
 
 .nav-playlist h3{
@@ -157,8 +161,8 @@ nav{
     margin-top: 0.5rem;
     align-content: center;
     align-items: center;
-    
-}
+    opacity: 0.5;
+  }
 
 .crea-playlist-symbol{
     background-color: white;
@@ -186,22 +190,27 @@ nav{
 
 .nav-playlist li{
     font-size: 0.6rem;
-    color: var(--gray-col);
+    color: var(--white-col);
     margin-top: 0.6rem;
 }
 
 /* profile banner  */
 
 .profile-banner{
-    background-color: yellow;
+    height: 65px;
+    color: var(--white-col);
 }
 
 .profile-banner .install-app{
     font-size: 0.6rem;
-    color: var(--gray-col);
+    color: var(--white-col);
     margin-top: 0.4rem;
     margin-bottom: 0.5rem;
+    opacity: 0.5;
     }
+
+
+    
     .install-app i{
         margin-right: 0.rem;
     }
@@ -224,15 +233,15 @@ nav{
 }
 
 .profile-banner hr{
-    color: var(--gray-col);
+    color: var(--white-col);
     width: 90%;
+    opacity: 0.5;
 }
 
 
 /* home page  */
 
 .home-page{
-    background-color: rgb(252, 137, 137);
     width: calc(100% - 170px);
     height: calc(100vh - 70px);
     padding-top: 60px;
@@ -257,9 +266,8 @@ nav{
 .upgrade-button{
     margin-right: 1.5rem;
     font-size: 0.7rem;
-    background-color: rgb(192, 29, 29);
     padding: 0.5rem 1rem;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 2rem;
 }
 
@@ -271,7 +279,8 @@ nav{
     font-size: 0.7rem;
     font-weight: 500;
     margin-top: 0.5rem;
-    color: var(--gray-col);
+    color: var(--white-col);
+    opacity: 0.5;
 }
 
    .home-page-nav ul li{
@@ -292,9 +301,13 @@ nav{
    }
 
    .song-card-text{
-        text-align: center;
-        
+        text-align: center; 
    }
+
+   .song-card-text h5{
+        opacity: 0.5;
+   }
+
 
    .custom-playlist .song-card-columns{
        justify-content: flex-start
@@ -307,12 +320,13 @@ nav{
    }
 
    .subtitle-playlist{
-       color: var(--gray-col);
+       color: var(--white-col);
        font-size: 0.7rem;
    }
 
    .popular-artist h3, .custom-playlist h3{
        margin-bottom: 1rem;
+       opacity: 0.5;
    }
 
    /* popular artist  */
@@ -321,6 +335,10 @@ nav{
         border-radius: 50%;
         overflow: hidden;
 }
+
+  .song-card-text h3{
+      opacity: 1;
+  }
 
 
 
@@ -345,7 +363,7 @@ nav{
 /* FOOTER   */
 
 footer{
-    background-color: aqua;
+    background-color:var(--secondary-col);
     width: 100%;
     height: 70px;
     overflow: hidden;
@@ -402,7 +420,7 @@ footer{
 
   .footer-sx-icons i{
       margin-right: 0.5rem;
-      color: var(--gray-col);
+      color: var(--white-col);
   }
 
   .footer-col-center{
@@ -447,9 +465,31 @@ footer{
       margin: 0 0.5rem;
   }
 
-  .footer-center-volume{
-    background-color: var(--gray-col);
-    width: 100%;
+  .volume-bar-container{
+      position: relative;
+  }
+
+  .footer-col-dx .volume-bar-container{
+     position: relative;
+     width: 30%;
+}
+
+.bar-dot{
+    background-color: white;
+    height: 0.7rem;
+    width: 0.7rem;
+    border-radius: 50%;
+    position: absolute;
+}
+
+  .footer-col-dx .bar-dot{
+    top: -4px;
+    left: 30%;
+  }
+
+  .footer-center-bottom .footer-center-volume{
+    background-color: var(--white-col);
+    width: 20%;
     height: 0.2rem;
     border-radius: 3rem;
     overflow: hidden;
@@ -459,13 +499,18 @@ footer{
         height: 100%;
         background-color: #141922;
      }
-
+     
+     .footer-center-bottom .bar-dot{
+            top: -4px;
+         left: 15%;
+     }
+      
      .footer-center-volume .black-bar{
          width: 20%;
      }
 
     .footer-dx-icons{
-    color: var(--gray-col);
+    color: var(--white-col);
     font-size: 0.5rem;
     display: flex;
     align-items: center;
@@ -481,8 +526,8 @@ footer{
     }
 
   .footer-dx-volume{
-      background-color: var(--gray-col);
-      width: 30%;
+      background-color: var(--white-col);
+      width: 100%;
       height: 0.2rem;
       border-radius: 3rem;
       overflow: hidden;
@@ -501,9 +546,9 @@ footer{
   @media screen and (max-width: 1100px){
 
  
-       .home-page{
-           background-color: rgb(203, 203, 122);
-       }
+       /* .home-page{
+           background-color: rgba(203, 203, 122, 0.3);
+       } */
    
        .footer-center-volume{
         min-width: 13rem;
@@ -519,12 +564,12 @@ footer{
   @media screen and (max-width: 700px){
 
  
-    .home-page{
+    /* .home-page{
         background-color: rgb(228, 228, 61);
-    }
+    } */
 
     /* .footer-center-volume{
-        background-color: var(--gray-col);
+        background-color: var(--white-col);
         width: 15rem;
         height: 0.2rem;
         border-radius: 3rem;
