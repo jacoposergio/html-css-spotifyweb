@@ -678,6 +678,9 @@ footer{
          margin-top: 70px;
        }
 
+       .song-card-col h5{
+           margin-bottom: 1rem;
+       }
 
 
 }
@@ -717,6 +720,7 @@ nav{
     position: relative;
     bottom: 0;
     left: 0;
+    padding-left: 0rem;
     background-color: rgba(0, 0, 0, 0);
 }
  
