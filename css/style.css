@@ -196,6 +196,7 @@ nav{
 
 .profile-banner{
     color: var(--white-col);
+    width: 170px;
     position: fixed;
     bottom: 70px;
     left: 1rem;
@@ -234,7 +235,7 @@ nav{
 
 .profile-banner hr{
     color: var(--white-col);
-    width: 90%;
+    width: 40%;
     opacity: 0.5;
 }
 
@@ -704,6 +705,15 @@ nav{
 
 .nav-links li:first-child{
         margin-left: 0rem;
+}
+
+.profile-banner{
+    color: var(--white-col);
+    width: 40px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
 }
  
     .home-page{
