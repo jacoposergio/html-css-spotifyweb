@@ -91,7 +91,6 @@ nav{
 }
 
 .spotify-logo-container{
-    height: 60px;
 }
 
 .spotify-logo img{
@@ -103,8 +102,7 @@ nav{
 /* nav links   */
 
 .nav-links{
-    height: 70px;
-}
+   }
 
 
 .nav-links ul{
@@ -144,11 +142,11 @@ nav{
 .nav-playlist{
     flex-grow: 1;
     overflow-y: auto;
-    height: calc( 100% - 195px) ;
-}
+       }
 
 .nav-playlist ul{
     overflow-y: auto;
+    height: 60%;
    }
 
 .nav-playlist h3{
@@ -197,8 +195,11 @@ nav{
 /* profile banner  */
 
 .profile-banner{
-    height: 65px;
     color: var(--white-col);
+    position: fixed;
+    bottom: 70px;
+    left: 1rem;
+    background-color: var(--tertiary-col);
 }
 
 .profile-banner .install-app{
