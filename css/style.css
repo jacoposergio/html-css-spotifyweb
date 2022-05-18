@@ -198,7 +198,7 @@ nav{
     left: 0;
     padding-left: 1rem;
     background-color: var(--tertiary-col);
-}
+ }
 
 .profile-banner .install-app{
     font-size: 0.6rem;
@@ -237,7 +237,7 @@ nav{
 }
 
 
-/* home page  */
+/* |||||||||||  HOME PAGE |||||||||||||||||   */
 
 .home-page{
     width: calc(100% - 170px);
@@ -259,6 +259,7 @@ nav{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    z-index: 10;
 }
 
 .upgrade-button{
